@@ -3,7 +3,7 @@ const { resolve } = require('path')
 
 
 export default {
-  root: './src',
+  // root: './src',
   base: '/cookieClicker/',
   resolve: {
       alias: {
@@ -11,10 +11,11 @@ export default {
       }
   },
   build: {
-    outDir: '../dist', rollupOptions: {
-      input: {
-        main: resolve(__dirname, "./src/index.html")
-      }
-    }
+    // outDir: '../dist', rollupOptions: {
+    //   input: {
+    //     main: resolve(__dirname, "./src/index.html")
+    //   }
+    // }
+    outDir: './dist'
   },
 }
