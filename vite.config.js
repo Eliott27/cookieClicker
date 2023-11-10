@@ -1,11 +1,8 @@
 const path = require('path')
 const { resolve } = require('path')
 
-const root = resolve(__dirname, 'src')
-
 
 export default {
-  root,
   base: '/cookieClicker/',
   resolve: {
       alias: {
@@ -13,9 +10,10 @@ export default {
       }
   },
   build: {
-    outDir: '../dist'
+    outDir: '../dist', rollupOptions: {
+      input: {
+        main: resolve(__dirname, "./src/index.html")
+      }
+    }
   },
-  // server: {
-  //   port: 8080
-  // }
 }
