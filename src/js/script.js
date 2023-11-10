@@ -2,7 +2,7 @@
 import "../scss/style.scss";
 
 // Import all of Bootstrap's JS
-import * as bootstrap from "bootstrap";
+// import * as bootstrap from "bootstrap";
 
 // Variables
 var buttonClick = document.getElementById("buttonClick");
