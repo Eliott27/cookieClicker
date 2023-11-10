@@ -3,6 +3,7 @@ const { resolve } = require('path')
 
 
 export default {
+  root: './src',
   base: '/cookieClicker/',
   resolve: {
       alias: {
