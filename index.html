@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <title>cookieClicker</title>
+  <script type="module" crossorigin src="/cookieClicker/assets/index-4c947539.js"></script>
+  <link rel="stylesheet" href="/cookieClicker/assets/index-e5f318b7.css">
+</head>
+
+<body>
+  <section>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Bienvenue dans le Bed bugs Clicker !</h3>
+        <h4>Règles du jeu :</h4>
+        <ol>
+          <li><b>Objectif :</b> Accumulez autant de "punaises de lit" que possible en cliquant
+            sur la punaise.</li>
+          <li><b>Score initial :</b> Le score initial est de 0.</li>
+          <li><b>Multiplicateur:</b> Achetez des multiplicateurs et augmentez la quantité de "punaises
+            de lit" que vous gagnez à chaque clic.</li>
+          <li><b>Autoclicks :</b> Achetez des "auto clicks" qui génèrent automatiquement des
+            "punaises de lit" à intervalles réguliers.</li>
+          <li><b>Bonus temporaire :</b>Achetez un "Bonus 200%" qui double votre production
+            de "punaises de lit" pendant 30 secondes.</li>
+          <li><b>Coût des améliorations :</b> Les multiplicateurs, autoclicks et bonus ont des coûts en
+            "punaises de lit" qui augmentent à chaque achat du même type.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container box1">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <div class="bleuGrasPetit m-2"><em>Bed bugs $ :</em></div>
+          <!-- compteur de punaises/points -->
+          <div class="count m-2" id="scoreView"></div>
+          <button class="reset" id="rules">Rules</button>
+          <button class="reset" id="reset-app">Reset</button>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 left-col">
+            <h1>BED BUGS <br><em>City</em></h1>
+            <div class="col-md-10">
+              <!-- Visibilité de l'état du multiplicateur  -->
+              <div id="multiplierView" class="statement m-2"></div>
+              <!-- visibilité du nombre de fois où l'utilisateur a selectionné l'autoclic  -->
+              <div class="m-2" id="autoclickCount">Nombre d'autoclicks : 0</div>
+              <!-- visibilité du temps restant sur le timer pour le 200%-->
+              <span class="m-2">Timer bonus: <span id="timer">0</span> </span>
+            </div>
+          </div>
+
+          <div class="col-sm-6 right-col">
+            <!-- punaise sur laquelle on clique -->
+            <div class="clicker"> <button class="clicker" id="buttonClick"><img src="/cookieClicker/assets/bedbug smile-e5b98f1b.png"
+                  alt=""></button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="container-fluid">
+        <div class="col-md-12 actions">
+
+          <div>
+            <button class="buttons" id="autoClickButton" disabled>
+              Auto-clic
+              <br>
+              <span class="bleuGrasPetit">
+                <span id="autoclickPrice"></span>
+                &dollar;</span>
+            </button>
+
+            <!-- //espace avec les boutons multiplicateurs -->
+            <button id="multiplier2" class="buttons" disabled>
+              x 2
+              <br>
+              <span class="bleuGrasPetit">
+                <span id="price2">30</span>
+                &dollar;</span>
+            </button>
+
+            <button id="multiplier5" class="buttons" disabled>
+              x 5
+              <br>
+              <span class="bleuGrasPetit">
+                <span id="price5">100</span>
+                &dollar;</span>
+            </button>
+
+            <button class="buttons" id="bonusButton" disabled>
+              200 %
+              <br>
+              <span class="bleuGrasPetit">
+                <span id="bonusPrice"></span>
+                &dollar;</span>
+            </button>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
